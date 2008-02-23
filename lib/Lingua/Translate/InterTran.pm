@@ -8,7 +8,7 @@ use LWP::UserAgent ();
 use URI ();
 use base qw(Lingua::Translate);
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 # languages supported by InterTran as of February 2008
 my %lang = (
@@ -138,8 +138,6 @@ L<Lingua::Translate|Lingua::Translate> that uses the online translator available
 at L<http://www.tranexp.com:2000/Translate/result.shtml>. The author felt
 compelled to write a CPAN module for it since it is the only online translator
 that can handle his native language, Icelandic (albeit amusingly poorly).
-
-Input text is assumed to be utf8-encoded. Output text will be utf8-encoded too.
 
 =head1 AUTHOR
 
