@@ -1,0 +1,7 @@
+Makefile.PL
+MANIFEST
+INSTALL
+Changes
+lib/Lingua/Translate/InterTran.pm
+t/00-compile.t
+META.yml                                 Module meta-data (added by MakeMaker)
