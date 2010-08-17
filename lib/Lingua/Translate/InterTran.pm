@@ -1,14 +1,18 @@
 package Lingua::Translate::InterTran;
+BEGIN {
+  $Lingua::Translate::InterTran::AUTHORITY = 'cpan:HINRIK';
+}
+BEGIN {
+  $Lingua::Translate::InterTran::VERSION = '0.05';
+}
 
 use strict;
-use warnings;
+use warnings FATAL => 'all';
 use Carp qw(croak);
 use Encode qw(encode decode);
 use LWP::UserAgent ();
 use URI ();
 use base qw(Lingua::Translate);
-
-our $VERSION = '0.04';
 
 # languages supported by InterTran as of February 2008
 my %lang = (
@@ -102,12 +106,10 @@ sub translate {
 }
 
 1;
-__END__
 
 =head1 NAME
 
-Lingua::Translate::InterTran - A L<Lingua::Translate|Lingua::Translate> backend
-for InterTran.
+Lingua::Translate::InterTran - A L<Lingua::Translate|Lingua::Translate> backend for InterTran.
 
 =head1 SYNOPSIS
 
